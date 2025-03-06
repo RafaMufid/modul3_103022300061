@@ -83,6 +83,13 @@ namespace modul3_103022300061
             int num2 = Int32.Parse(textBox1.Text.Split('+')[1]);
 
             int result = num1 + num2;
+
+            if (textBox1.Text.Split('+').Length > 2)
+            {
+                int num3 = Int32.Parse(textBox1.Text.Split('+')[2]);
+                result += num3;
+            }
+            
             textBox1.Text = result.ToString();
         }
     }
